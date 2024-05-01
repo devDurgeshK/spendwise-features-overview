@@ -1,0 +1,121 @@
+<h1 id="spendwise-v3-features-overview">SpendWise v3 Features Overview</h1>
+<ul>
+<li>Dynamic Ids<ul>
+<li>Change the simple ids with some Dynamic ids. And implement those ids all across the application</li>
+<li>Ids that should be changed are User, Budget, Expense IDs.</li>
+<li>Ids should not be random. There should be meaning to the ids created.</li>
+<li>All the ids should be UNIQUE.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Options For LogIn and Forgot Password<ul>
+<li>Option for the user to login with USER ID or the USERNAME. But password should be asked for both of the options.\</li>
+<li>If the user clicks on the ‘Forgot Password’ button he should be given to verify his/her identity by using the Security Question or sending an OTP to the given email address.</li>
+<li>The option for the Security Question should only be given if the user has already provided the Security Question. If not there should be only one option (i.e., sending OTP).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Password Restrictions Universally<ul>
+<li>The length of the password should be 6-10 characters only, not less than 6 characters and not more than 10 characters.</li>
+<li>There should be at least 1 of each of the following in the user provided password:<ul>
+<li>Uppercase alphabet</li>
+<li>Lowercase alphabet</li>
+<li>Number</li>
+<li>Symbol</li>
+</ul>
+</li>
+<li>There should be no continuous strings on the keyboard (such as QWERTY, 123456) in any format (UPPERCASE, LOWERCASE, MIXED).</li>
+<li>There should also not be the words like ‘PASSWORD’ in the password given by the user.</li>
+<li>The FIRST &amp; LAST NAME also should not be in the password provided.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Password Change Restrictions<ul>
+<li>Universal Password Restrictions Included.</li>
+<li>The last 5 passwords should not be the same.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Import Database Functionality (AUTO)<ul>
+<li>Secret Window for IMPORTING the backed up database if needed.</li>
+<li>Only the user with specific USER TYPE (i.e., admin) should be able to import the database &amp; also be able to open the Import database Window.</li>
+<li>This window should open only when the user has been logged in the main Page.</li>
+<li>Ask for the remark for why importing the database importing from the backup file</li>
+<li>Keeping the record of the imports in a JSON file of the following:<ul>
+<li>How many times has the database been imported from the backup file?</li>
+<li>Date and Time of each import.</li>
+<li>The username of the user who imported the database from the backup file.</li>
+<li>The remark for importing the database from the backup file.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Retool Database Transition<ul>
+<li>Transition completely to the RETOOL database. All the tables and all the utilities that are related to the database<ul>
+<li>Database Structure Ensuring System</li>
+<li>Automatic Database Backup System</li>
+<li>User Database Backup System</li>
+</ul>
+</li>
+<li>Rename the REGISTRATION table to the USERS table..</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>USER Backup System<ul>
+<li>Option to backup specific budgets or the selected budgets created by the user.</li>
+<li>Option should be available in the PROFILE menu</li>
+<li>TabView for creating and the backup and importing the created backup.</li>
+<li>If the budget with the same BUDGET ID is in the backup file. Ask the user which budget should be imported in the database either which is in the backup file or which is current. Check this for every budget.</li>
+<li>Toplevel for the above Window feature which shows the above condition and two buttons<ul>
+<li>IMPORT</li>
+<li>DON’T IMPORT</li>
+</ul>
+</li>
+<li>And the budgets with the different BUDGET IDS should be imported automatically. After all the budgets are imported. Show a message showing all the imported budgets.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Database Utilities<ul>
+<li>All the Database Utilities only should show up only when the user is logged in with the USER TYPE of ADMIN.</li>
+<li>User with the USER TYPE user should not be able to open these Database Utilities</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Centralized Queries<ul>
+<li>There should not be queries created in the main code file.</li>
+<li>There should be a separate file for all the SQL queries that are used in the whole code.</li>
+<li>And all the queries should be imported from this file to the file where that query is needed.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Appearance<ul>
+<li>Option of changing the appearance of the application should be available in the PROFILE menu.</li>
+<li>The appearance changes should be remembered and should be applied when the user logs in to the main page of the application.</li>
+<li>Appearance Options<ul>
+<li>Theme - Light / Dark / System</li>
+<li>Full Screen Mode</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
