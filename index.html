@@ -1,26 +1,23 @@
-<title>SpendWise v3 Features List</title>
-<h1 id="spendwise-v3-features-overview">SpendWise v3 Features Overview</h1>
+<title>SpendWise v3 Features Overview</title>
+
 <ul>
-<li>Dynamic Ids<ul>
+<li><p>Dynamic Ids</p>
+<ul>
 <li>Change the simple ids with some Dynamic ids. And implement those ids all across the application</li>
 <li>Ids that should be changed are User, Budget, Expense IDs.</li>
 <li>Ids should not be random. There should be meaning to the ids created.</li>
 <li>All the ids should be UNIQUE.</li>
 </ul>
 </li>
-</ul>
-<hr>
+<li><p>Options For LogIn and Forgot Password</p>
 <ul>
-<li>Options For LogIn and Forgot Password<ul>
 <li>Option for the user to login with USER ID or the USERNAME. But password should be asked for both of the options.\</li>
 <li>If the user clicks on the ‘Forgot Password’ button he should be given to verify his/her identity by using the Security Question or sending an OTP to the given email address.</li>
 <li>The option for the Security Question should only be given if the user has already provided the Security Question. If not there should be only one option (i.e., sending OTP).</li>
 </ul>
 </li>
-</ul>
-<hr>
+<li><p>Password Restrictions Universally</p>
 <ul>
-<li>Password Restrictions Universally<ul>
 <li>The length of the password should be 6-10 characters only, not less than 6 characters and not more than 10 characters.</li>
 <li>There should be at least 1 of each of the following in the user provided password:<ul>
 <li>Uppercase alphabet</li>
@@ -34,18 +31,14 @@
 <li>The FIRST &amp; LAST NAME also should not be in the password provided.</li>
 </ul>
 </li>
-</ul>
-<hr>
+<li><p>Password Change Restrictions</p>
 <ul>
-<li>Password Change Restrictions<ul>
 <li>Universal Password Restrictions Included.</li>
 <li>The last 5 passwords should not be the same.</li>
 </ul>
 </li>
-</ul>
-<hr>
+<li><p>Import Database Functionality (AUTO)</p>
 <ul>
-<li>Import Database Functionality (AUTO)<ul>
 <li>Secret Window for IMPORTING the backed up database if needed.</li>
 <li>Only the user with specific USER TYPE (i.e., admin) should be able to import the database &amp; also be able to open the Import database Window.</li>
 <li>This window should open only when the user has been logged in the main Page.</li>
@@ -59,10 +52,8 @@
 </li>
 </ul>
 </li>
-</ul>
-<hr>
+<li><p>Retool Database Transition</p>
 <ul>
-<li>Retool Database Transition<ul>
 <li>Transition completely to the RETOOL database. All the tables and all the utilities that are related to the database<ul>
 <li>Database Structure Ensuring System</li>
 <li>Automatic Database Backup System</li>
@@ -72,10 +63,8 @@
 <li>Rename the REGISTRATION table to the USERS table..</li>
 </ul>
 </li>
-</ul>
-<hr>
+<li><p>USER Backup System</p>
 <ul>
-<li>USER Backup System<ul>
 <li>Option to backup specific budgets or the selected budgets created by the user.</li>
 <li>Option should be available in the PROFILE menu</li>
 <li>TabView for creating and the backup and importing the created backup.</li>
@@ -88,27 +77,21 @@
 <li>And the budgets with the different BUDGET IDS should be imported automatically. After all the budgets are imported. Show a message showing all the imported budgets.</li>
 </ul>
 </li>
-</ul>
-<hr>
+<li><p>Database Utilities</p>
 <ul>
-<li>Database Utilities<ul>
 <li>All the Database Utilities only should show up only when the user is logged in with the USER TYPE of ADMIN.</li>
 <li>User with the USER TYPE user should not be able to open these Database Utilities</li>
 </ul>
 </li>
-</ul>
-<hr>
+<li><p>Centralized Queries</p>
 <ul>
-<li>Centralized Queries<ul>
 <li>There should not be queries created in the main code file.</li>
 <li>There should be a separate file for all the SQL queries that are used in the whole code.</li>
 <li>And all the queries should be imported from this file to the file where that query is needed.</li>
 </ul>
 </li>
-</ul>
-<hr>
+<li><p>Appearance</p>
 <ul>
-<li>Appearance<ul>
 <li>Option of changing the appearance of the application should be available in the PROFILE menu.</li>
 <li>The appearance changes should be remembered and should be applied when the user logs in to the main page of the application.</li>
 <li>Appearance Options<ul>
@@ -118,5 +101,118 @@
 </li>
 </ul>
 </li>
+<li><p>Budget Status</p>
+<ul>
+<li>Remove the archived and closed fields in the database &amp; add a new field called status.</li>
+<li>There can be only 3 statuses of any budget<ul>
+<li>Open</li>
+<li>Archived</li>
+<li>Closed</li>
 </ul>
-<hr>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Settings Menu</strong></p>
+<ul>
+<li><p>Currency - (Dialog)</p>
+<ul>
+<li>Change Currency Button</li>
+<li>Options for changing the currency<ul>
+<li>Change only the Symbol</li>
+<li>Convert current currency to the user selected currency (as per the market status of that currency)</li>
+<li>Show details if the user want to convert the currency<ul>
+<li>Current Value</li>
+<li>Converted Value</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Archived Budgets</p>
+<ul>
+<li>[Toggle] ALLOW / DON&#39;T ALLOW to change the budget settings when the budget is archived. (DEFAULT - Allow)</li>
+<li>Allow the archived budgets to be deleted from the archived menu directly (DEFAULT - Yes)</li>
+</ul>
+</li>
+<li><p>Default One Time Expense Limit (O.T.E.L) for every budget - (Toggle &amp; Input) [DEFAULT - off]</p>
+<ul>
+<li>If Toggle is ON ask the expense limit to the user (DEFAULT - same amount as the Budget Amount)</li>
+</ul>
+</li>
+<li><p>Setting Category (of Budget &amp; Expense) - (Toggle) [Default - OFF]</p>
+<ul>
+<li>Ask for changing Category Everytime the budget is created - Dialog appears if the toggle is ON</li>
+</ul>
+</li>
+<li><p>Export Budget </p>
+<ul>
+<li>[Toggle] Send the exported file to the provided Email address by the user. [Default - Ask Every time]</li>
+<li>[Toggle] Send email after any budget is exported (Default - NO)</li>
+</ul>
+</li>
+<li><p>Expenses Related Settings</p>
+<ul>
+<li>[Toggle] Serialize the expense name only if the expense name is not provided by the user. (Default - NO)</li>
+<li>[Toggle] Show the date and time of the expense added in the View Expenses [Default - NO]</li>
+</ul>
+</li>
+<li><p>[Toggle] Send Email is the status of the budget changes and also include all the details of that budget. (Default - NO)</p>
+<ul>
+<li>Statuses<ul>
+<li>Open</li>
+<li>Archived</li>
+<li>Closed</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Budget Utilities</p>
+<ul>
+<li>Export Every Budget for all the statuses.<ul>
+<li>Give the option to put all the budgets in a single file, or create a separate file for every budget</li>
+<li>If the user selects make different export file then put all the files in a .zip</li>
+</ul>
+</li>
+<li>Send the whole details to the user on the given email address.<ul>
+<li>Send only for the budgets with the Status OPEN.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Profile Menu</strong></p>
+<ul>
+<li><p>Edit Information</p>
+<ul>
+<li>First Name</li>
+<li>Last Name</li>
+<li>Email</li>
+<li>Username</li>
+</ul>
+</li>
+<li><p>Security Section</p>
+<ul>
+<li>Update Password</li>
+<li>Add or Remove<ul>
+<li>Security Question</li>
+<li>2FA</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Add a Profile Picture</p>
+<ul>
+<li>Give a Selected number of options to choose a profile picture.</li>
+</ul>
+</li>
+<li><p>Show the date of the account created at the very end of the profile menu.</p>
+</li>
+<li><p>Sections in Profile Menu</p>
+<ul>
+<li>Profile Menu</li>
+<li>Appearance Menu</li>
+</ul>
+</li>
+</ul>
